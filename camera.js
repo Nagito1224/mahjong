@@ -6,6 +6,8 @@ video.playsInline = true;
 const cameraSetting = {
     audio: false,
     video: {
+        width: window.innerWidth * 0.7,
+        height: window.innerHeight * 0.7,
         facingMode: "environment",
     }
 }
