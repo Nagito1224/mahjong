@@ -1,5 +1,7 @@
 const video = document.getElementById("camera");
 video.autoplay = true;
+video.muted = true;
+video.playsInline = true;
 
 const cameraSetting = {
     audio: false,
