@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麻雀得点判定システム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- title -->
+    <header>
+        <h3 id="title">麻雀得点判定システム</h3>
+    </header>
+
+    <!-- camera -->
+    <div id="video-wrap">
+    <video id="camera"></video>
+    <canvas id="camera-output" hidden></canvas>
+    <button id="shutter">撮影</button>
+    </div>
+    <script src="./camera.js"></script>
+</body>
+</html>
