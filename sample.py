@@ -1,8 +1,14 @@
-def greet():
-    return "this is external script!!"
+from js import sessionStorage, window
 
 def main():
-    print(f"hello!! {greet()}")
+    image_data = sessionStorage.getItem('capturedImage')
+    sessionStorage.removeItem('capturedImage')
+
+    # image_dataに対して処理を行う
+
+    sessionStorage.setItem("resultImage", image_data)
+    window.location.href = './result.html'
+
 
 if __name__ == "__main__":
     main()

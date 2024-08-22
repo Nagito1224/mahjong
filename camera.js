@@ -28,5 +28,5 @@ shutterButton.addEventListener("click", ()=>{
     const imageData = canvas.toDataURL("image/png");
     sessionStorage.setItem('capturedImage', imageData);
 
-    window.location.href = 'result.html';
+    window.location.href = './edit.html';
 });
